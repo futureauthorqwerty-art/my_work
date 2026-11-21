@@ -1,0 +1,332 @@
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+=== MACE Smoke Test (device=cpu) ===
+--- Models found in /home/mam23/.cache/mace ---
+  (cache directory does not exist)
+[MACE-OFF23 (medium)] Cached model: not found (will be downloaded on first use)
+Downloading MACE model from 'https://raw.githubusercontent.com/ACEsuit/mace-off/main/mace_off23/MACE-OFF23_medium.model'
+The model is distributed under the Academic Software License (ASL) license, see https://github.com/gabor1/ASL
+ To use the model you accept the terms of the license.
+ASL is based on the Gnu Public License, but does not permit commercial use
+Downloading: 100.0% (17.5 MB / 17.5 MB)
+Cached MACE model to /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:421: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] Model saved to: MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] PASS | E = -2081.116397 eV | max|F| = 0.647487 eV/A
+[MACE-MP-0 (med+D3) ] Cached model: not found (will be downloaded on first use)
+Downloading MACE model from 'https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0/2023-12-03-mace-128-L1_epoch-199.model'
+Traceback (most recent call last):
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 1333, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/http/client.py", line 1386, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/http/client.py", line 1432, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/http/client.py", line 1381, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/http/client.py", line 1141, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/http/client.py", line 1085, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/http/client.py", line 1527, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/ssl.py", line 469, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/ssl.py", line 1087, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/ssl.py", line 1383, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 277, in mace_mp
+    model_path = download_mace_mp_checkpoint(model)
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 173, in download_mace_mp_checkpoint
+    _, http_msg = _urlretrieve_with_timeout(checkpoint_url, cached_model_path)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 50, in _urlretrieve_with_timeout
+    with urllib.request.urlopen(
+         ~~~~~~~~~~~~~~~~~~~~~~^
+        _normalize_github_download_url(url), timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as response:
+    ^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 1381, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/urllib/request.py", line 1336, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mam23/Molecular-and-Materials-Modeling-2026-November/exercise_01/check-mace-ase/check_mace_01.py", line 74, in <module>
+    raw_model = mace_mp(
+        model=model_size,
+    ...<3 lines>...
+        **extra_kwargs,
+    )
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 284, in mace_mp
+    raise RuntimeError("Model download failed and no local model found") from exc
+RuntimeError: Model download failed and no local model found
+(molmatmodel) mam23@AFONY123:~/Molecular-and-Materials-Modeling-2026-November/exercise_01/check-mace-ase$ python check_mace_01.py
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+=== MACE Smoke Test (device=cpu) ===
+--- Models found in /home/mam23/.cache/mace ---
+  2023-12-03-mace-128-L1_epoch-199.model           44.42 MB
+  2023-12-03-mace-128-L1_epoch-199.model:Zone.Identifier     0.00 MB
+  MACE-OFF23_medium.model                          18.35 MB
+[MACE-OFF23 (medium)] Cached model: /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:421: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] Model saved to: MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] PASS | E = -2081.116397 eV | max|F| = 0.647487 eV/A
+[MACE-MP-0 (med+D3) ] Cached model: not found (will be downloaded on first use)
+Downloading MACE model from 'https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0/2023-12-03-mace-128-L1_epoch-199.model'
+Downloading: 100.0% (42.4 MB / 42.4 MB)
+Cached MACE model to /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:297: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-MP-0 (med+D3) ] Model saved to: MACE-MP-0_medplusD3.model
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 307, in mace_mp
+    from torch_dftd.torch_dftd3_calculator import TorchDFTD3Calculator
+ModuleNotFoundError: No module named 'torch_dftd'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mam23/Molecular-and-Materials-Modeling-2026-November/exercise_01/check-mace-ase/check_mace_01.py", line 97, in <module>
+    calc = mace_mp(model=model_size, device=device, default_dtype="float64", **extra_kwargs)
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 309, in mace_mp
+    raise RuntimeError(
+        "Please install torch-dftd to use dispersion corrections (see https://github.com/pfnet-research/torch-dftd)"
+    ) from exc
+RuntimeError: Please install torch-dftd to use dispersion corrections (see https://github.com/pfnet-research/torch-dftd)
+(molmatmodel) mam23@AFONY123:~/Molecular-and-Materials-Modeling-2026-November/exercise_01/check-mace-ase$ python check_mace_01.py
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+=== MACE Smoke Test (device=cpu) ===
+--- Models found in /home/mam23/.cache/mace ---
+  2023-12-03-mace-128-L1_epoch-199.model           44.42 MB
+  2023-12-03-mace-128-L1_epoch-199.model:Zone.Identifier     0.00 MB
+  20231203mace128L1_epoch199model                  44.42 MB
+  MACE-OFF23_medium.model                          18.35 MB
+[MACE-OFF23 (medium)] Cached model: /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:421: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] Model saved to: MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] PASS | E = -2081.116397 eV | max|F| = 0.647487 eV/A
+[MACE-MP-0 (med+D3) ] Cached model: not found (will be downloaded on first use)
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:297: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-MP-0 (med+D3) ] Model saved to: MACE-MP-0_medplusD3.model
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 307, in mace_mp
+    from torch_dftd.torch_dftd3_calculator import TorchDFTD3Calculator
+ModuleNotFoundError: No module named 'torch_dftd'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mam23/Molecular-and-Materials-Modeling-2026-November/exercise_01/check-mace-ase/check_mace_01.py", line 97, in <module>
+    calc = mace_mp(model=model_size, device=device, default_dtype="float64", **extra_kwargs)
+  File "/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py", line 309, in mace_mp
+    raise RuntimeError(
+        "Please install torch-dftd to use dispersion corrections (see https://github.com/pfnet-research/torch-dftd)"
+    ) from exc
+RuntimeError: Please install torch-dftd to use dispersion corrections (see https://github.com/pfnet-research/torch-dftd)
+(molmatmodel) mam23@AFONY123:~/Molecular-and-Materials-Modeling-2026-November/exercise_01/check-mace-ase$ python check_mace_01.py
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+=== MACE Smoke Test (device=cpu) ===
+--- Models found in /home/mam23/.cache/mace ---
+  2023-12-03-mace-128-L1_epoch-199.model           44.42 MB
+  2023-12-03-mace-128-L1_epoch-199.model:Zone.Identifier     0.00 MB
+  20231203mace128L1_epoch199model                  44.42 MB
+  MACE-OFF23_medium.model                          18.35 MB
+[MACE-OFF23 (medium)] Cached model: /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:421: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] Model saved to: MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /home/mam23/.cache/mace/MACE-OFF23_medium.model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-OFF23 (medium)] PASS | E = -2081.116397 eV | max|F| = 0.647487 eV/A
+[MACE-MP-0 (med+D3) ] Cached model: not found (will be downloaded on first use)
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/foundations_models.py:297: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:83: FutureWarning: `torch.jit.save` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+[MACE-MP-0 (med+D3) ] Model saved to: MACE-MP-0_medplusD3.model
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+Using TorchDFTD3Calculator for D3 dispersion corrections
+[MACE-MP-0 (med+D3) ] PASS | E =  -14.169148 eV | max|F| = 0.226262 eV/A
