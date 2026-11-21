@@ -1,1 +1,5 @@
-
+conda activate
+conda activate molmatmodel
+cd /home/Egor/Molecular-and-Materials-Modeling-2026-November/exercise_01
+python check_env.py
+python check-mace_01.py
