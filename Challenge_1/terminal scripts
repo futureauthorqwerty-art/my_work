@@ -1,6 +1,9 @@
+
 conda activate
 conda activate molmatmodel
 cd /home/Egor/Molecular-and-Materials-Modeling-2026-November/exercise_01
 python check_env.py
 cd check-my-ase
 python check-mace_01.py
+cd check-mopac-ase
+python check_mopac.py
