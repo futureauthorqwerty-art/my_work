@@ -5,5 +5,7 @@ cd /home/Egor/Molecular-and-Materials-Modeling-2026-November/exercise_01
 python check_env.py
 cd check-my-ase
 python check-mace_01.py
-cd check-mopac-ase
+cd ../check-mopac-ase
 python check_mopac.py
+cd ../check-nwchem-ase
+python check_nwchem.py
