@@ -1,0 +1,5 @@
+=== NWChem (B3LYP/6-31G*, np=2) Smoke Test ===
+Status             : PASS
+Total Energy (H2O) : -2079.193471 eV
+Max Force Component: 0.045251 eV/A
+Keeping NWChem working files
