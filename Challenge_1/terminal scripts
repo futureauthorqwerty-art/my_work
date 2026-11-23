@@ -9,3 +9,4 @@ cd ../check-mopac-ase
 python check_mopac.py
 cd ../check-nwchem-ase
 python check_nwchem.py
+mpirun -np 4 nwchem check_nwchem_h2o.nwi > secondary_output.nwo
