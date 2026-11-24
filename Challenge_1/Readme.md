@@ -19,3 +19,7 @@ The objective of this assignment is to verify the installation, environment setu
   1. **Python / ASE Interface:** Executed the calculation using the provided Python script.
   2. **Standalone Execution:** Ran NWChem directly from the terminal using a standalone input file.
 * **Outcome:** Both methods completed successfully and produced consistent energy results.
+
+### Note: 
+Actually I don't understend what is solution in this particular case due to I did exactly what you have done and obtain the same results, except the MACE executed on CPU. If solution is my terminal script, then I attach it in corresponding file. 
+
