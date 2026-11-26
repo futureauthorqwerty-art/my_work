@@ -6,3 +6,4 @@ Calculate the number of symmetries for ethan: three first order external asix an
 Add C-C bond calculations in ethane. Excp value 1.512 was taken from pubchem
 Changed coeficients in # 6. Reaction energetics:
 Complete double check with Deepseek. 
+Using Hess law recalculate table enthalpy for ethane.
