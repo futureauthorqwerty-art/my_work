@@ -1,0 +1,43 @@
+=== MACE Potential Initialization ===
+Model Variant      : MACE-MP-0 (medium) + D3 dispersion
+Compute Device     : cpu (PyTorch 2.15.0+cu132)
+Reaction           : C2H6(g) + 3.5 O2(g) -> 2 CO2(g) + 3 H2O(g)
+Spin Treatment     : Spin-polarized PBE reference (S=1 for triplet O2 in IdealGasThermo)
+Using Materials Project MACE for MACECalculator with /home/mam23/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+/home/mam23/miniconda3/envs/molmatmodel/lib/python3.14/site-packages/torch/jit/_serialization.py:170: FutureWarning: `torch.jit.load` is not supported in Python 3.14+ and may break. Please switch to `torch.export`.
+  warnings.warn(
+Using TorchDFTD3Calculator for D3 dispersion corrections
+
+=== Tight Geometry Optimization & Harmonic Vibrations (delta = 0.01 A) ===
+
+[C2H6 (singlet)] steps=6  | E_opt= -40.701970 eV | ZPE=1.9339 eV
+  Internal frequencies (cm^-1): 66.5, 729.5, 729.5, 944.7, 955.4, 955.4, 1252.8, 1328.7, 1330.0, 1345.5, 1355.0, 1356.3, 3068.3, 3118.0, 3158.1, 3158.6, 3170.1, 3170.6
+
+[O2  (triplet)] steps=4  | E_opt=  -9.696549 eV | ZPE=0.0890 eV
+  Internal frequencies (cm^-1): 1419.5
+
+[CO2 (singlet)] steps=3  | E_opt= -22.805005 eV | ZPE=0.3231 eV
+  Internal frequencies (cm^-1): 710.2, 710.2, 1326.3, 2451.1
+
+[H2O (singlet)] steps=6  | E_opt= -14.170072 eV | ZPE=0.5565 eV
+  Internal frequencies (cm^-1): 1599.6, 3590.1, 3734.4
+
+=== Relaxed Bond Lengths vs. Experiment ===
+C-H in C2H6        : 1.0915 A  (Expt: 1.087 A)
+C-C in C2H6        : 1.5209 A  (Expt: 1.512 A)
+O=O in O2 (triplet): 1.2366 A  (Expt: 1.208 A)
+C=O in CO2         : 1.1744 A  (Expt: 1.160 A)
+O-H in H2O         : 0.9730 A  (Expt: 0.958 A)
+
+=== Gas-Phase Ethane Combustion Summary (MACE-MP-0): C2H6 + 3.5 O2 -> 2 CO2 + 3 H2O ===
+Electronic dE_rxn  : -13.4803 eV  (-1300.65 kJ/mol)
+Zero-Point dZPE    :  +0.0703 eV  (   +6.78 kJ/mol)
+ZPE-Corr dE_0K     : -13.4100 eV  (-1293.87 kJ/mol)
+Enthalpy dcH_298K  : -13.3679 eV  (-1289.80 kJ/mol)  [Expt ref: -1560.7 kJ/mol]
