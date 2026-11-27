@@ -1,0 +1,32 @@
+=== NWChem DFT Calculator Initialization ===
+Functional / Basis : B3LYP / 6-311++G**
+MPI Launch Command : mpirun -np 4 nwchem PREFIX.nwi > PREFIX.nwo
+Reaction           : C2H6(g) + 3.5 O2(g) -> 2 CO2(g) + 3 H2O(g)
+Spin Treatment     : Restricted singlet (mult=1) except open-shell triplet O2 (odft, mult=3)
+
+=== ASE Geometry Optimization & Harmonic Vibrations (delta = 0.01 A) ===
+
+[C2H6 (singlet)] steps=8  | E_opt=-2173.035950 eV | ZPE=2.0224 eV
+  Internal frequencies (cm^-1): 306.3, 826.7, 827.2, 995.8, 1217.8, 1217.8, 1408.9, 1424.0, 1503.9, 1504.4, 1506.0, 1506.4, 3021.9, 3022.3, 3067.2, 3067.6, 3092.1, 3092.4
+
+[O2   (triplet)] steps=5  | E_opt=-4091.833122 eV | ZPE=0.1028 eV
+  Internal frequencies (cm^-1): 1632.1
+
+[CO2  (singlet)] steps=4  | E_opt=-5133.398967 eV | ZPE=0.3155 eV
+  Internal frequencies (cm^-1): 656.1, 656.1, 1371.9, 2405.9
+
+[H2O  (singlet)] steps=6  | E_opt=-2080.562019 eV | ZPE=0.5846 eV
+  Internal frequencies (cm^-1): 1601.6, 3816.2, 3921.7
+
+=== Relaxed Bond Lengths vs. Experiment ===
+C-C in C2H6        : 1.5307 A  (Expt: 1.535 A)
+C-H in C2H6        : 1.0936 A  (Expt: 1.094 A)
+O=O in O2 (triplet): 1.2062 A  (Expt: 1.208 A)
+C=O in CO2         : 1.1608 A  (Expt: 1.160 A)
+O-H in H2O         : 0.9621 A  (Expt: 0.958 A)
+
+=== Gas-Phase Ethane Combustion Summary (NWChem B3LYP/6-311++G**) ===
+Electronic dE_rxn  : -14.0321 eV  (-1353.89 kJ/mol)
+Zero-Point dZPE    :  +0.0027 eV  (   +0.26 kJ/mol)
+ZPE-Corr dE_0K     : -14.0295 eV  (-1353.64 kJ/mol)
+Enthalpy dcH_298K  : -13.9721 eV  (-1348.11 kJ/mol)  [Expt ref: -1428.60 kJ/mol]
